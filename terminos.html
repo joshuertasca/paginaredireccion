@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=redirect.html">
+    <title>Redirección</title>
+</head>
+<body>
+    <script>
+        // Obtener el parámetro de consulta "redirect" de la URL actual
+        const params = new URLSearchParams(window.location.search);
+        const redirectURL = params.get("redirect");
+
+        // Redirigir a la URL especificada en el parámetro "redirect"
+        if (redirectURL) {
+            window.location.href = redirectURL;
+        }
+    </script>
+</body>
+</html>
